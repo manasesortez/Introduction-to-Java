@@ -55,7 +55,6 @@ public class telefono {
         this.price = 000.00;
     }
     //fin del contructor
-
     public void realizarLlamada(String telefono, int minutos, double tarifa){
 
         double saldoGastar;
@@ -76,6 +75,12 @@ public class telefono {
         this.setSaldo(nuevoSaldo);
         JOptionPane.showMessageDialog(null, "Saldo Cargado con exito");
     }
+
+    public void Informacion(){
+
+    }
+
+
 }
 
 

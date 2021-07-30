@@ -44,7 +44,7 @@ public class Main {
                     objTelefono.realizarLlamada(telefonoDestino, minutos, PriceMinute );
                     break;
                 case "Mostrar Informacion":
-
+                    JOptionPane.showMessageDialog(null, "--- Informacion Principal --- " + "\n\nNumero: " + objTelefono.getTelefono() + "\n\nSaldo: $" + objTelefono.getSaldo() + "\n\nMarca: " + objTelefono.getMarca() + "\n\nModelo: " + objTelefono.getModelo() + "\n\n Precio de Compra: $" + objTelefono.getPrice());
                     break;
                 default:
                     break;
@@ -52,8 +52,8 @@ public class Main {
 
         }else{
             JOptionPane.showMessageDialog(null, "Bienvenido Por Favor Compre un Telefono");
-            String telefono, marca, modelo;
-            double price;
+            final String telefono, marca, modelo;
+            final double price;
             telefono = JOptionPane.showInputDialog("Numero de Telefono");
             marca = JOptionPane.showInputDialog("Introduzca la marca");
             modelo = JOptionPane.showInputDialog("Introduzca el Modelo");
@@ -65,7 +65,6 @@ public class Main {
                 objTelefono.setModelo(modelo);
                 JOptionPane.showMessageDialog(null, "--- Factura ---" + "\n\nNumero: " + telefono + "\n\nMarca: " + marca  +  "\n\nModelo: " + modelo + "\n\nPrecio: $"+ price  +"\n\n ------- Exit -------" + "\n\n Preciones OK para continuar");
             }
-
         }
 
     }JOptionPane.showMessageDialog(null, "Gracias :D");
