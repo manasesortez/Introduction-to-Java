@@ -13,7 +13,9 @@ public class telefono {
     private String telefono;
     private double saldo;
     private String marca;
+    private String modelo;
     private double price;
+
     //private final double tarifa = 0.10; al sustituir esta variable podemos cambiar la tarifa a opcion
 
     //Definiremos los Get y Set de las propoedades
@@ -39,6 +41,9 @@ public class telefono {
         this.marca = marca;
     }
 
+    public String getModelo(){ return modelo;}
+    public void setModelo(String modelo){ this.modelo = modelo; }
+
     public double getPrice(){return price;}
     public void setPrice(double price){ this.price = price;}
 
@@ -46,6 +51,7 @@ public class telefono {
         this.telefono = "00000000";
         this.saldo = 0.0;
         this.marca = "Samsung";
+        this.modelo = "Galaxi Note 10";
         this.price = 000.00;
     }
     //fin del contructor

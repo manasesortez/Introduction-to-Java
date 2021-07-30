@@ -52,17 +52,18 @@ public class Main {
 
         }else{
             JOptionPane.showMessageDialog(null, "Bienvenido Por Favor Compre un Telefono");
-            String telefono, marca;
+            String telefono, marca, modelo;
             double price;
             telefono = JOptionPane.showInputDialog("Numero de Telefono");
             marca = JOptionPane.showInputDialog("Introduzca la marca");
+            modelo = JOptionPane.showInputDialog("Introduzca el Modelo");
             price = Double.parseDouble(JOptionPane.showInputDialog("Ingrese Precio del Telefono"));
             if(!telefono.equals("")){
                 objTelefono.setTelefono(telefono);
                 objTelefono.setMarca(marca);
                 objTelefono.setPrice(price);
-                JOptionPane.showMessageDialog(null, "--- Factura ---" + "\n\nNumero: " + telefono + "\n\nMarca: " + marca  + "\n\nPrecio: $"+ price  +"\n\n ------- Exit -------" + "\n\n Preciones OK para continuar");
-
+                objTelefono.setModelo(modelo);
+                JOptionPane.showMessageDialog(null, "--- Factura ---" + "\n\nNumero: " + telefono + "\n\nMarca: " + marca  +  "\n\nModelo: " + modelo + "\n\nPrecio: $"+ price  +"\n\n ------- Exit -------" + "\n\n Preciones OK para continuar");
             }
 
         }
