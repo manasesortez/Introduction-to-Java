@@ -76,11 +76,6 @@ public class telefono {
         JOptionPane.showMessageDialog(null, "Saldo Cargado con exito");
     }
 
-    public void Informacion(){
-
-    }
-
-
 }
 
 
