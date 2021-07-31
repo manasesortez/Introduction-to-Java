@@ -44,7 +44,13 @@ public class Main {
                     objTelefono.realizarLlamada(telefonoDestino, minutos, PriceMinute );
                     break;
                 case "Mostrar Informacion":
-                    JOptionPane.showMessageDialog(null, "--- Informacion Principal --- " + "\n\nNumero: " + objTelefono.getTelefono() + "\n\nSaldo: $" + objTelefono.getSaldo() + "\n\nMarca: " + objTelefono.getMarca() + "\n\nModelo: " + objTelefono.getModelo() + "\n\n Precio de Compra: $" + objTelefono.getPrice());
+                    String getTelefono = objTelefono.getTelefono();
+                    double getSaldo = objTelefono.getSaldo();
+                    String getMarca = objTelefono.getMarca();
+                    String getModelo = objTelefono.getModelo();
+                    double getPrecio = objTelefono.getPrice();
+
+                    JOptionPane.showMessageDialog(null, "--- Informacion Principal --- " + "\n\nNumero: " + getTelefono + "\n\nSaldo: $" + getSaldo + "\n\nMarca: " + getMarca + "\n\nModelo: " + getModelo + "\n\n Precio de Compra: $" + getPrecio);
                     break;
                 default:
                     break;
